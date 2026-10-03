@@ -97,6 +97,15 @@ def main():
     eq("world rows", len(table("world")), n)
     day_fast = min(range(7, 100), key=lambda k: dbl(world, k)); out_fast = min((k for k in range(7, 100) if outside[k] >= 1000), key=lambda k: dbl(outside, k))
 
+    cj = table("china_jumps"); rises = sorted(((series["China"][k] - series["China"][k - 1], dates[k].isoformat()) for k in range(1, 100)), reverse=True)[:2]
+    for r, (v, d) in zip(cj, rises):
+        eq("china jump date", r["date"], d); same("china jump", v, r["rise"])
+    eq("china jumps listed", len(cj), 2)
+    for r in table("threshold_sensitivity"):
+        th = int(r["min_cases_outside_china"]); k = min((k for k in range(7, 100) if outside[k] >= th), key=lambda k: dbl(outside, k))
+        same(f"sensitivity {th} doubling", dbl(outside, k), r["doubling_days"]); same("day", k + 1, r["day"]); eq("date", r["date"], dates[k].isoformat()); same("cases", outside[k], r["outside_china_cases"])
+    eq("sensitivity rows", [int(r["min_cases_outside_china"]) for r in table("threshold_sensitivity")], [100, 500, 1000, 3000, 5000, 10000])
+
     # spread
     def spread(k):
         v = [series[c][k] for c in names]; return sum(x >= 1 for x in v), sum(x >= 100 for x in v), sum(x >= 1000 for x in v)
@@ -124,6 +133,12 @@ def main():
         o = out[r["country"]]; eq(f"day0 {r['country']}", r["day0"], o["day0"])
         for key in ("slope", "doubling", "r2", "factor14", "c30", "c60", "c100"):
             same(f"{key} {r['country']}", o[key], r[key], 1e-8)
+
+    # the trajectories drawn in the chart
+    shown = ["China", "Korea, South", "Italy", "Spain", "US", "United Kingdom", "Brazil", "India"]; tj = table("trajectories"); eq("trajectory rows", len(tj), 8 * 101)
+    for r in tj:
+        s = series[r["country"]]; i0 = day0[r["country"]]; same(f"trajectory {r['country']} day {r['day']}", s[i0 + int(r["day"])], r["cases"])
+    eq("trajectory countries", sorted({r["country"] for r in tj}), sorted(shown))
 
     # by arrival period, and the summary
     edges = [("to Feb 2020", "0000-00-00", "2020-03-01"), ("Mar 2020", "2020-03-01", "2020-04-01"), ("Apr 2020", "2020-04-01", "2020-05-01"), ("May-Jun 2020", "2020-05-01", "2020-07-01"),

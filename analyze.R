@@ -1,7 +1,7 @@
 # Steps 2-4: audit the series, follow the world through its first 100 days, see how far it had spread, and measure each country's growth after it passed 100 cases.
 #
 #   Rscript analyze.R
-#     -> results/audit.csv  falls.csv  world.csv  spread.csv  spread_daily.csv  countries.csv  by_period.csv  summary.csv
+#     -> results/audit.csv  falls.csv  china_jumps.csv  world.csv  spread.csv  spread_daily.csv  threshold_sensitivity.csv  countries.csv  trajectories.csv  by_period.csv  summary.csv
 #
 # JHU CSSE confirmed cases, cumulative, by country or province, 22 January 2020 to 9 March 2023. Provinces are summed into countries. Four rows are not countries (two cruise ships and two
 # Olympic Games) and are left out of every country count and of the world total. "Day 0" of a country is the first day its cumulative count reached 100. Growth in the next 14 days is the slope
@@ -28,6 +28,7 @@ audit <- tibble(check = c("rows in the file", "country or region names", "rows t
                           last_total, nrow(falls), n_distinct(falls$country), -min(falls$new), china$new[1], china$new[2]))
 write_csv(audit, "results/audit.csv")
 write_csv(falls |> head(5) |> transmute(country, date = as.character(date), change = new), "results/falls.csv")
+write_csv(china |> head(2) |> transmute(date = as.character(date), rise = new), "results/china_jumps.csv")
 
 # Step 3: the world in its first 100 days
 world <- cty |> group_by(date) |> summarise(outside = sum(cum[country != "China"]), cum = sum(cum), .groups = "drop") |>
@@ -39,6 +40,9 @@ spread <- bind_rows(lapply(c(1, 25, 50, 75, 100), function(d) {
   v <- cty |> filter(date == dates[d]) |> pull(cum); tibble(day = d, date = as.character(dates[d]), at_least_1 = sum(v >= 1), at_least_100 = sum(v >= 100), at_least_1000 = sum(v >= 1000))
 }))
 write_csv(spread, "results/spread.csv")
+sens <- bind_rows(lapply(c(100, 500, 1000, 3000, 5000, 10000), function(th) { m <- world |> filter(day >= 8, day <= 100, outside >= th) |> slice_min(outside_doubling7, n = 1, with_ties = FALSE)
+  tibble(min_cases_outside_china = th, doubling_days = m$outside_doubling7, day = m$day, date = as.character(m$date), outside_china_cases = m$outside) }))
+write_csv(sens, "results/threshold_sensitivity.csv")
 write_csv(bind_rows(lapply(1:100, function(d) { v <- cty |> filter(date == dates[d]) |> pull(cum); tibble(day = d, date = as.character(dates[d]), at_least_1 = sum(v >= 1), at_least_100 = sum(v >= 100), at_least_1000 = sum(v >= 1000)) })), "results/spread_daily.csv")
 
 # Step 4: each country after it passed 100 cases
@@ -48,6 +52,8 @@ rows <- lapply(split(cty, cty$country), function(g) {
   tibble(country = g$country[1], day0 = as.character(g$date[i0]), slope = b, doubling = if (b > 0) log(2) / b else Inf, r2 = summary(fit)$r.squared, factor14 = v[15] / v[1], c30 = at(30), c60 = at(60), c100 = at(100))
 })
 cs <- bind_rows(rows) |> arrange(doubling, country); write_csv(cs, "results/countries.csv")
+SHOWN <- c("China", "Korea, South", "Italy", "Spain", "US", "United Kingdom", "Brazil", "India")                                  # for the chart: cases on each of the 101 days from day 0
+write_csv(bind_rows(lapply(SHOWN, function(k) { g <- cty |> filter(country == k); i0 <- which(g$cum >= 100)[1]; tibble(country = k, day = 0:100, cases = g$cum[i0:(i0 + 100)]) })), "results/trajectories.csv")
 reached <- cty |> filter(cum >= 100) |> group_by(country) |> summarise(day0 = min(date), .groups = "drop")
 fin <- cs |> filter(is.finite(doubling)) |> mutate(d0 = as.numeric(ymd(day0)))
 cs$period <- cut(as.numeric(ymd(cs$day0)), breaks = as.numeric(ymd(c("1900-01-01", "2020-03-01", "2020-04-01", "2020-05-01", "2020-07-01", "2021-01-01", "2100-01-01"))), right = FALSE,

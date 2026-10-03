@@ -1,0 +1,809 @@
+country,day,cases
+China,0,548
+China,1,643
+China,2,920
+China,3,1406
+China,4,2075
+China,5,2877
+China,6,5509
+China,7,6087
+China,8,8141
+China,9,9802
+China,10,11891
+China,11,16630
+China,12,19716
+China,13,23707
+China,14,27440
+China,15,30587
+China,16,34110
+China,17,36814
+China,18,39829
+China,19,42354
+China,20,44386
+China,21,44759
+China,22,59895
+China,23,66358
+China,24,68413
+China,25,70513
+China,26,72434
+China,27,74211
+China,28,74619
+China,29,75077
+China,30,75550
+China,31,77001
+China,32,77022
+China,33,77241
+China,34,77754
+China,35,78166
+China,36,78600
+China,37,78928
+China,38,79356
+China,39,79932
+China,40,80136
+China,41,80261
+China,42,80386
+China,43,80537
+China,44,80690
+China,45,80770
+China,46,80823
+China,47,80860
+China,48,80887
+China,49,80921
+China,50,80932
+China,51,80945
+China,52,80977
+China,53,81003
+China,54,81033
+China,55,81058
+China,56,81102
+China,57,81156
+China,58,81250
+China,59,81305
+China,60,81435
+China,61,81493
+China,62,81587
+China,63,81658
+China,64,81781
+China,65,81872
+China,66,81964
+China,67,82058
+China,68,82139
+China,69,83786
+China,70,84002
+China,71,84129
+China,72,84265
+China,73,84363
+China,74,84467
+China,75,84611
+China,76,84692
+China,77,84909
+China,78,85024
+China,79,85115
+China,80,85208
+China,81,85377
+China,82,85489
+China,83,85569
+China,84,85668
+China,85,85774
+China,86,86187
+China,87,86258
+China,88,86321
+China,89,86382
+China,90,86452
+China,91,86508
+China,92,86548
+China,93,86594
+China,94,86632
+China,95,86661
+China,96,86692
+China,97,86754
+China,98,86783
+China,99,86828
+China,100,86850
+"Korea, South",0,104
+"Korea, South",1,204
+"Korea, South",2,433
+"Korea, South",3,602
+"Korea, South",4,833
+"Korea, South",5,977
+"Korea, South",6,1261
+"Korea, South",7,1766
+"Korea, South",8,2337
+"Korea, South",9,3150
+"Korea, South",10,3736
+"Korea, South",11,4335
+"Korea, South",12,5186
+"Korea, South",13,5621
+"Korea, South",14,6088
+"Korea, South",15,6593
+"Korea, South",16,7041
+"Korea, South",17,7314
+"Korea, South",18,7478
+"Korea, South",19,7513
+"Korea, South",20,7755
+"Korea, South",21,7869
+"Korea, South",22,7979
+"Korea, South",23,8086
+"Korea, South",24,8162
+"Korea, South",25,8236
+"Korea, South",26,8320
+"Korea, South",27,8413
+"Korea, South",28,8565
+"Korea, South",29,8652
+"Korea, South",30,8799
+"Korea, South",31,8961
+"Korea, South",32,8961
+"Korea, South",33,9037
+"Korea, South",34,9137
+"Korea, South",35,9241
+"Korea, South",36,9332
+"Korea, South",37,9478
+"Korea, South",38,9583
+"Korea, South",39,9661
+"Korea, South",40,9786
+"Korea, South",41,9887
+"Korea, South",42,9976
+"Korea, South",43,10062
+"Korea, South",44,10156
+"Korea, South",45,10237
+"Korea, South",46,10284
+"Korea, South",47,10331
+"Korea, South",48,10384
+"Korea, South",49,10423
+"Korea, South",50,10450
+"Korea, South",51,10480
+"Korea, South",52,10512
+"Korea, South",53,10537
+"Korea, South",54,10564
+"Korea, South",55,10591
+"Korea, South",56,10613
+"Korea, South",57,10635
+"Korea, South",58,10653
+"Korea, South",59,10661
+"Korea, South",60,10674
+"Korea, South",61,10683
+"Korea, South",62,10694
+"Korea, South",63,10708
+"Korea, South",64,10718
+"Korea, South",65,10728
+"Korea, South",66,10738
+"Korea, South",67,10752
+"Korea, South",68,10761
+"Korea, South",69,10765
+"Korea, South",70,10774
+"Korea, South",71,10780
+"Korea, South",72,10793
+"Korea, South",73,10801
+"Korea, South",74,10804
+"Korea, South",75,10806
+"Korea, South",76,10810
+"Korea, South",77,10822
+"Korea, South",78,10840
+"Korea, South",79,10874
+"Korea, South",80,10909
+"Korea, South",81,10936
+"Korea, South",82,10962
+"Korea, South",83,10991
+"Korea, South",84,11018
+"Korea, South",85,11037
+"Korea, South",86,11050
+"Korea, South",87,11065
+"Korea, South",88,11078
+"Korea, South",89,11110
+"Korea, South",90,11122
+"Korea, South",91,11142
+"Korea, South",92,11165
+"Korea, South",93,11190
+"Korea, South",94,11206
+"Korea, South",95,11225
+"Korea, South",96,11265
+"Korea, South",97,11344
+"Korea, South",98,11402
+"Korea, South",99,11441
+"Korea, South",100,11468
+Italy,0,155
+Italy,1,229
+Italy,2,322
+Italy,3,453
+Italy,4,655
+Italy,5,888
+Italy,6,1128
+Italy,7,1694
+Italy,8,2036
+Italy,9,2502
+Italy,10,3089
+Italy,11,3858
+Italy,12,4636
+Italy,13,5883
+Italy,14,7375
+Italy,15,9172
+Italy,16,10149
+Italy,17,12462
+Italy,18,15113
+Italy,19,17660
+Italy,20,21157
+Italy,21,24747
+Italy,22,27980
+Italy,23,31506
+Italy,24,35713
+Italy,25,41035
+Italy,26,47021
+Italy,27,53578
+Italy,28,59138
+Italy,29,63927
+Italy,30,69176
+Italy,31,74386
+Italy,32,80589
+Italy,33,86498
+Italy,34,92472
+Italy,35,97689
+Italy,36,101739
+Italy,37,105792
+Italy,38,110574
+Italy,39,115242
+Italy,40,119827
+Italy,41,124632
+Italy,42,128948
+Italy,43,132547
+Italy,44,135586
+Italy,45,139422
+Italy,46,143626
+Italy,47,147577
+Italy,48,152271
+Italy,49,156363
+Italy,50,159516
+Italy,51,162488
+Italy,52,165155
+Italy,53,168941
+Italy,54,172434
+Italy,55,175925
+Italy,56,178972
+Italy,57,181228
+Italy,58,183957
+Italy,59,187327
+Italy,60,189973
+Italy,61,192994
+Italy,62,195351
+Italy,63,197675
+Italy,64,199414
+Italy,65,201505
+Italy,66,203591
+Italy,67,205463
+Italy,68,207428
+Italy,69,209328
+Italy,70,210717
+Italy,71,211938
+Italy,72,213013
+Italy,73,214457
+Italy,74,215858
+Italy,75,217185
+Italy,76,218268
+Italy,77,219070
+Italy,78,219814
+Italy,79,221216
+Italy,80,222104
+Italy,81,223096
+Italy,82,223885
+Italy,83,224760
+Italy,84,225435
+Italy,85,225886
+Italy,86,226699
+Italy,87,227364
+Italy,88,228006
+Italy,89,228658
+Italy,90,229327
+Italy,91,229858
+Italy,92,230158
+Italy,93,230555
+Italy,94,231139
+Italy,95,231732
+Italy,96,232248
+Italy,97,232664
+Italy,98,232997
+Italy,99,233197
+Italy,100,233515
+Spain,0,120
+Spain,1,165
+Spain,2,222
+Spain,3,259
+Spain,4,400
+Spain,5,500
+Spain,6,673
+Spain,7,1073
+Spain,8,1695
+Spain,9,2277
+Spain,10,2277
+Spain,11,5232
+Spain,12,6391
+Spain,13,7798
+Spain,14,9942
+Spain,15,11748
+Spain,16,13910
+Spain,17,17963
+Spain,18,20410
+Spain,19,25374
+Spain,20,28768
+Spain,21,35136
+Spain,22,39885
+Spain,23,49515
+Spain,24,57786
+Spain,25,65719
+Spain,26,73235
+Spain,27,80110
+Spain,28,87956
+Spain,29,95923
+Spain,30,104118
+Spain,31,112065
+Spain,32,119199
+Spain,33,126168
+Spain,34,131646
+Spain,35,136675
+Spain,36,141942
+Spain,37,148220
+Spain,38,153222
+Spain,39,158273
+Spain,40,163027
+Spain,41,166831
+Spain,42,170099
+Spain,43,172541
+Spain,44,177644
+Spain,45,184948
+Spain,46,190839
+Spain,47,191726
+Spain,48,198674
+Spain,49,200210
+Spain,50,204178
+Spain,51,208389
+Spain,52,213024
+Spain,53,202990
+Spain,54,205905
+Spain,55,207634
+Spain,56,209465
+Spain,57,210773
+Spain,58,212917
+Spain,59,213435
+Spain,60,215216
+Spain,61,216582
+Spain,62,217466
+Spain,63,218011
+Spain,64,219329
+Spain,65,220325
+Spain,66,221447
+Spain,67,222857
+Spain,68,223578
+Spain,69,224350
+Spain,70,227436
+Spain,71,228030
+Spain,72,228691
+Spain,73,229540
+Spain,74,230183
+Spain,75,230698
+Spain,76,230698
+Spain,77,231606
+Spain,78,232037
+Spain,79,232555
+Spain,80,233037
+Spain,81,234824
+Spain,82,235290
+Spain,83,235772
+Spain,84,235400
+Spain,85,236259
+Spain,86,236259
+Spain,87,237906
+Spain,88,238564
+Spain,89,239228
+Spain,90,239479
+Spain,91,239638
+Spain,92,239932
+Spain,93,240326
+Spain,94,240660
+Spain,95,240978
+Spain,96,241310
+Spain,97,241550
+Spain,98,241717
+Spain,99,241966
+Spain,100,242280
+US,0,107
+US,1,184
+US,2,237
+US,3,403
+US,4,519
+US,5,594
+US,6,782
+US,7,1147
+US,8,1586
+US,9,2219
+US,10,2978
+US,11,3212
+US,12,4679
+US,13,6512
+US,14,9169
+US,15,13663
+US,16,20030
+US,17,26025
+US,18,34944
+US,19,46096
+US,20,56714
+US,21,68841
+US,22,86662
+US,23,105253
+US,24,127417
+US,25,143544
+US,26,165698
+US,27,192079
+US,28,227903
+US,29,260183
+US,30,292630
+US,31,324340
+US,32,353117
+US,33,385110
+US,34,415256
+US,35,446500
+US,36,482526
+US,37,516707
+US,38,545693
+US,39,571551
+US,40,598794
+US,41,627306
+US,42,653669
+US,43,683351
+US,44,716508
+US,45,743857
+US,46,768888
+US,47,799531
+US,48,825478
+US,49,855445
+US,50,887523
+US,51,919014
+US,52,949640
+US,53,975537
+US,54,1000230
+US,55,1024834
+US,56,1051643
+US,57,1081150
+US,58,1115972
+US,59,1142619
+US,60,1166189
+US,61,1190240
+US,62,1214321
+US,63,1238694
+US,64,1266904
+US,65,1294111
+US,66,1318358
+US,67,1337061
+US,68,1356283
+US,69,1379661
+US,70,1399662
+US,71,1425539
+US,72,1449938
+US,73,1473806
+US,74,1492449
+US,75,1514833
+US,76,1535591
+US,77,1558430
+US,78,1583542
+US,79,1607464
+US,80,1627392
+US,81,1647513
+US,82,1666699
+US,83,1685395
+US,84,1704200
+US,85,1725329
+US,86,1750066
+US,87,1772783
+US,88,1791547
+US,89,1809384
+US,90,1829340
+US,91,1848388
+US,92,1876099
+US,93,1902280
+US,94,1922433
+US,95,1940242
+US,96,1957154
+US,97,1977478
+US,98,1999224
+US,99,2021527
+US,100,2047082
+United Kingdom,0,134
+United Kingdom,1,189
+United Kingdom,2,246
+United Kingdom,3,295
+United Kingdom,4,374
+United Kingdom,5,429
+United Kingdom,6,483
+United Kingdom,7,630
+United Kingdom,8,888
+United Kingdom,9,1299
+United Kingdom,10,1788
+United Kingdom,11,2268
+United Kingdom,12,2632
+United Kingdom,13,3074
+United Kingdom,14,3686
+United Kingdom,15,4456
+United Kingdom,16,5462
+United Kingdom,17,6523
+United Kingdom,18,7778
+United Kingdom,19,8975
+United Kingdom,20,10398
+United Kingdom,21,12747
+United Kingdom,22,15139
+United Kingdom,23,17847
+United Kingdom,24,20958
+United Kingdom,25,24203
+United Kingdom,26,27055
+United Kingdom,27,29949
+United Kingdom,28,34251
+United Kingdom,29,38788
+United Kingdom,30,43755
+United Kingdom,31,48694
+United Kingdom,32,53645
+United Kingdom,33,57739
+United Kingdom,34,61359
+United Kingdom,35,66715
+United Kingdom,36,72199
+United Kingdom,37,77369
+United Kingdom,38,82281
+United Kingdom,39,86620
+United Kingdom,40,90248
+United Kingdom,41,93784
+United Kingdom,42,97993
+United Kingdom,43,102352
+United Kingdom,44,107454
+United Kingdom,45,112792
+United Kingdom,46,117777
+United Kingdom,47,122508
+United Kingdom,48,126375
+United Kingdom,49,131252
+United Kingdom,50,136023
+United Kingdom,51,141529
+United Kingdom,52,146682
+United Kingdom,53,151662
+United Kingdom,54,155445
+United Kingdom,55,158920
+United Kingdom,56,163627
+United Kingdom,57,168351
+United Kingdom,58,173796
+United Kingdom,59,178765
+United Kingdom,60,183500
+United Kingdom,61,186726
+United Kingdom,62,189702
+United Kingdom,63,193086
+United Kingdom,64,196775
+United Kingdom,65,200612
+United Kingdom,66,204383
+United Kingdom,67,207435
+United Kingdom,68,209585
+United Kingdom,69,211907
+United Kingdom,70,215495
+United Kingdom,71,218892
+United Kingdom,72,222191
+United Kingdom,73,224809
+United Kingdom,74,227330
+United Kingdom,75,229397
+United Kingdom,76,231223
+United Kingdom,77,233799
+United Kingdom,78,236862
+United Kingdom,79,239572
+United Kingdom,80,242126
+United Kingdom,81,244170
+United Kingdom,82,245678
+United Kingdom,83,247033
+United Kingdom,84,248645
+United Kingdom,85,250304
+United Kingdom,86,252113
+United Kingdom,87,253849
+United Kingdom,88,255358
+United Kingdom,89,256465
+United Kingdom,90,257535
+United Kingdom,91,258979
+United Kingdom,92,260449
+United Kingdom,93,261797
+United Kingdom,94,263035
+United Kingdom,95,264146
+United Kingdom,96,264938
+United Kingdom,97,265656
+United Kingdom,98,266751
+United Kingdom,99,267909
+United Kingdom,100,269097
+Brazil,0,151
+Brazil,1,151
+Brazil,2,162
+Brazil,3,200
+Brazil,4,321
+Brazil,5,372
+Brazil,6,621
+Brazil,7,793
+Brazil,8,1021
+Brazil,9,1546
+Brazil,10,1924
+Brazil,11,2247
+Brazil,12,2554
+Brazil,13,2985
+Brazil,14,3417
+Brazil,15,3904
+Brazil,16,4256
+Brazil,17,4579
+Brazil,18,5717
+Brazil,19,6836
+Brazil,20,8044
+Brazil,21,9056
+Brazil,22,10360
+Brazil,23,11130
+Brazil,24,12161
+Brazil,25,14034
+Brazil,26,16170
+Brazil,27,18092
+Brazil,28,19638
+Brazil,29,20727
+Brazil,30,22192
+Brazil,31,23430
+Brazil,32,25262
+Brazil,33,28320
+Brazil,34,30425
+Brazil,35,33682
+Brazil,36,36658
+Brazil,37,38654
+Brazil,38,40743
+Brazil,39,43079
+Brazil,40,45757
+Brazil,41,50036
+Brazil,42,54043
+Brazil,43,59324
+Brazil,44,63100
+Brazil,45,67446
+Brazil,46,73235
+Brazil,47,79685
+Brazil,48,87187
+Brazil,49,92202
+Brazil,50,97100
+Brazil,51,101826
+Brazil,52,108620
+Brazil,53,115455
+Brazil,54,126611
+Brazil,55,135773
+Brazil,56,146894
+Brazil,57,156061
+Brazil,58,162699
+Brazil,59,169594
+Brazil,60,178214
+Brazil,61,190137
+Brazil,62,203165
+Brazil,63,220291
+Brazil,64,233511
+Brazil,65,241080
+Brazil,66,255368
+Brazil,67,271885
+Brazil,68,294624
+Brazil,69,312761
+Brazil,70,334568
+Brazil,71,351565
+Brazil,72,366033
+Brazil,73,378840
+Brazil,74,395167
+Brazil,75,415366
+Brazil,76,443703
+Brazil,77,470593
+Brazil,78,502914
+Brazil,79,516137
+Brazil,80,531286
+Brazil,81,562963
+Brazil,82,589048
+Brazil,83,621002
+Brazil,84,653103
+Brazil,85,676893
+Brazil,86,694881
+Brazil,87,712219
+Brazil,88,743917
+Brazil,89,777707
+Brazil,90,806399
+Brazil,91,830681
+Brazil,92,851911
+Brazil,93,868705
+Brazil,94,893322
+Brazil,95,930305
+Brazil,96,961230
+Brazil,97,986750
+Brazil,98,1042809
+Brazil,99,1106332
+Brazil,100,1086536
+India,0,102
+India,1,113
+India,2,119
+India,3,142
+India,4,156
+India,5,194
+India,6,244
+India,7,330
+India,8,396
+India,9,499
+India,10,536
+India,11,657
+India,12,727
+India,13,887
+India,14,987
+India,15,1024
+India,16,1251
+India,17,1397
+India,18,1998
+India,19,2543
+India,20,2567
+India,21,3082
+India,22,3588
+India,23,4778
+India,24,5311
+India,25,5916
+India,26,6725
+India,27,7598
+India,28,8446
+India,29,9205
+India,30,10453
+India,31,11487
+India,32,12322
+India,33,13430
+India,34,14352
+India,35,15722
+India,36,17615
+India,37,18539
+India,38,20080
+India,39,21370
+India,40,23077
+India,41,24530
+India,42,26283
+India,43,27890
+India,44,29451
+India,45,31324
+India,46,33062
+India,47,34863
+India,48,37257
+India,49,39699
+India,50,42505
+India,51,46437
+India,52,49400
+India,53,52987
+India,54,56351
+India,55,59695
+India,56,62808
+India,57,67161
+India,58,70768
+India,59,74292
+India,60,78055
+India,61,81997
+India,62,85784
+India,63,90648
+India,64,95698
+India,65,100328
+India,66,106475
+India,67,112028
+India,68,118226
+India,69,124794
+India,70,131423
+India,71,138536
+India,72,144950
+India,73,150793
+India,74,158086
+India,75,165386
+India,76,173491
+India,77,181827
+India,78,190609
+India,79,198370
+India,80,207191
+India,81,216824
+India,82,226713
+India,83,236184
+India,84,246622
+India,85,257486
+India,86,265928
+India,87,276146
+India,88,286605
+India,89,297535
+India,90,308993
+India,91,320922
+India,92,332424
+India,93,343091
+India,94,354065
+India,95,366946
+India,96,380532
+India,97,395048
+India,98,410451
+India,99,425282
+India,100,440215
