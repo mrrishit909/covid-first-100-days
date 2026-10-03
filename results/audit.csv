@@ -1,0 +1,15 @@
+check,value
+rows in the file,289
+country or region names,201
+rows that are not countries,4
+countries and territories,197
+first date,18283
+last date,19425
+days,1143
+missing case values,0
+cases on the last day in the four rows left out,2121
+country-days where the cumulative count fell,171
+countries where it fell at least once,84
+largest one-day fall,348840
+China's largest one-day rise in its first 100 days,15136
+China's second largest one-day rise in its first 100 days,6463
